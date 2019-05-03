@@ -12,11 +12,15 @@ import { RegisterComponent } from './login/register.component';
 
 import { PagesModule } from './pages/pages.module';
 
+// Servicios
+import { ServiceModule } from './services/service.module';
 
 //Temporales
 
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
+
 
 
 @NgModule({
@@ -32,9 +36,11 @@ import { CommonModule } from '@angular/common';
     APP_ROUTES,
     PagesModule,
     FormsModule,
-    CommonModule
+    CommonModule,
+    ServiceModule
   ],
   providers: [],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
